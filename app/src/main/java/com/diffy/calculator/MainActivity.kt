@@ -33,7 +33,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier
                         .fillMaxSize()
                         .background(MediumGray)
-                        .padding(16.dp)
+                        .padding(18.dp)
                 )
             }
         }
