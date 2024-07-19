@@ -38,6 +38,6 @@ jobs:
       with:
          generate_release_notes: true
          prerelease: true
-         tag: Github-rels
+         tag_name: Github-rels
          files: |
            app/build/outputs/apk/release/app-release.apk
