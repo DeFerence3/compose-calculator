@@ -41,5 +41,6 @@ jobs:
           generate_release_notes: true
           prerelease: true
           tag_name: Github-rels
+          token: ${{ secrets.PAT }}
           files: |
             app/build/outputs/apk/release/app-release-unsigned.apk
