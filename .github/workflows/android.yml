@@ -20,5 +20,15 @@ jobs:
         distribution: 'temurin'
         cache: gradle
 
+    - name: Grant execute permission for gradlew
+      run: chmod +x gradlew
+    - name: Build with Gradle
+      run: ./gradlew build
+    - name: Build Apk
+      run: ./gradlew assembleRelease
+
+    - name: SearchApk
+      run: ls *.apk
+
     - name: List files in APK directory
       run: tree -D
