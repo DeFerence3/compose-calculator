@@ -26,6 +26,9 @@ jobs:
       run: ./gradlew build
     - name: Build Apk
       run: ./gradlew assembleRelease
+
+    - name: List files in APK directory
+      run: ls -lR
       
     - name: Upload Release Build to Artifacts
       uses: actions/upload-artifact@v3
