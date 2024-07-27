@@ -28,7 +28,7 @@ jobs:
       run: ./gradlew assembleRelease
 
     - name: SearchApk
-      run: ls *.apk
+      run: find -name *.apk
 
     - name: List files in APK directory
       run: tree -D
